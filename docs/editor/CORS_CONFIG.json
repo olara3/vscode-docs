@@ -1,0 +1,15 @@
+[
+    {
+        "AllowedHeaders": [
+            "Autorization"
+        ],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins":[
+            "<Url of first buchet with http:// >"
+        ],
+        "ExposeHeaders": [],
+        "MaxAgeSeconds": 3000
+    }
+]

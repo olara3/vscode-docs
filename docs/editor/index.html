@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>My first webpage</title>
+
+    </head>
+    <body>
+        <h1>I love coffe</h1>
+        <p>Hello world!</p>
+    </body>
+
+    <img src="coffe.jpg" width="500"/>
+
+    <!-- Cors demo-->
+    <div id="tofetch"/>
+    <script>
+        var tofetch = document.getElementById("tofetch");
+
+        fetch('https://demo-other-origin-olara3.s3.ca-central-1.amazonaws.com/extra-page.html')
+        .then((response) => {
+
+            return response.text();
+
+        } )
+
+        .then ((html)  => {
+            tofetch.innerHTML = html
+        }
+
+        )
+
+        </script>
+
+
+
+</html>
